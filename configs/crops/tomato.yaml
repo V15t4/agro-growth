@@ -1,0 +1,51 @@
+id: tomato
+name: "Томат (теплица)"
+
+# Фенология и температура
+t_base: 10.0
+t_upper: 32.0
+gdd_to_maturity: 1100.0
+
+# Коэффициент транспирации по стациям
+kc_ini: 0.60
+kc_mid: 1.15
+kc_end: 0.70
+
+# Влажность воздуха
+vpd_opt_lo: 0.50
+vpd_opt_hi: 1.20
+vpd_critical: 2.50
+
+# Температурный стресс
+t_opt_lo: 20.0
+t_opt_hi: 28.0
+t_crit_lo: 8.0
+t_crit_hi: 40.0
+
+# Почва
+ph_opt_lo: 5.8
+ph_opt_hi: 6.8
+ph_tolerance: 1.0
+ec_threshold: 2.5
+ec_slope: 4.0
+theta_fc: 0.32
+theta_wp: 0.12
+root_depth_mm: 400.0
+depletion_fraction: 0.50
+
+# Свет и фотосинтез
+lai_max: 4.5
+lai_gain: 0.020
+k_extinction: 0.55
+rue: 2.80
+
+# Продуктивность
+harvest_index: 0.60
+dry_matter_fraction: 0.06
+fruit_allometry_a: 0.0006
+fruit_allometry_b: 3.0
+target_yield_t_ha: 60.0
+
+# Априорные параметры модели роста
+mu_prior: 0.080
+k_prior_g: 350.0

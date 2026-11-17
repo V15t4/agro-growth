@@ -1,0 +1,17 @@
+[project]
+name = "agro-growth"
+version = "0.1.0"
+description = "Вероятностный прогноз роста плодов и овощей по данным состояния и математическим моделям"
+requires-python = ">=3.12"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+src = ["src"]
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
